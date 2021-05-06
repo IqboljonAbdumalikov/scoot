@@ -183,3 +183,71 @@ body {
   color: #fcb72b;
   background-color: transparent;
 }
+
+
+/*JOIN-US SECTION*/
+.join-us {
+	padding-top: 160px;
+	padding-bottom: 200px;
+}
+.join-us__container {
+	position: relative;
+}
+.join-us__horizontal-line {
+	left: calc(50% - 675px);
+	top: calc(50% - 105px);
+	position: absolute;
+	z-index: -1;
+	width: 974px;
+	height: 15px;
+	background-color: #e5eef4;
+}
+.join-us__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.join-us__item {
+	width: 350px;
+}
+.join-us__item:not(.join-us__item:last-child) {
+	margin-right: 30px;
+}
+.join-us__heading:before {
+  display: block;
+  content: "";
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fcb72b;
+  margin-bottom: 40px;
+}
+.join-us__heading {
+  font-size: 24px;  
+  line-height: 28px;
+  color: #495567;
+  letter-spacing: -1.07px;
+  margin-bottom: 27px;
+}
+
+.join-us__heading--first:before {
+  background-image: url("../images/locate-with-app.svg");
+  background-size: 38px 48px;
+}
+.join-us__heading--second:before {
+  background-image: url("../images/pick-your-scooter.svg");
+  background-size: 40px 40px;
+}
+.join-us__heading--third:before {
+  background-image: url("../images/enjoy-the-ride.svg");
+  background-size: 38px 48px;
+}
+.join-us__desc {
+	font-size: 15px;
+	line-height: 25px;
+	color: #939caa;
+}
+
