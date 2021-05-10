@@ -743,3 +743,228 @@ body {
 
 
 
+
+/*   CAREERS PAGE STYLES    */
+
+.careers__title-wrapper {
+  background-image: url("../images/site-hero-bg-circles.svg"),
+                    linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)),
+                    url("../images/site-hero-pages-bg.png");
+  background-repeat: no-repeat,
+                     repeat,
+                     no-repeat;
+  background-size: 234px 63px,
+                   100%,
+                   1799px 2249px;
+  background-position: calc(50% + 590px) calc(50%),
+                       center center,
+                       calc(50% - 145px) calc(95%);
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+.careers__title {
+  color: #fff;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+}
+
+/* MISSIONS SECTION */
+.missions {
+padding: 90px;
+}
+.missions__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  padding-top: 120px;
+}
+.missions__item {
+  width: 445px;
+  position: relative;
+  z-index: 11;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  margin-bottom: 120px;
+}
+.missions__item:after {
+  position: absolute;
+  content: "";
+  height: 445px;
+  width: 954px;
+}
+.missions__item--first:after {
+  background-image: url("../images/care-to-join-our-mission.png");
+  right: calc(50% - 1360px);
+}
+.missions__item__info {
+  position: relative;
+  width: 445px;
+}
+.missions__item__info:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 734px;
+  height: 138px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.missions__item__info--first:after {
+  background-image: url("../images/yellow-arrow-to-left.svg");
+  top: 240px;
+  right: -840px;
+}
+.missions__heading {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+  margin-bottom: 24px;
+}
+.missions__desc {
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  margin-bottom: 40px;
+}
+.missions__link {
+  display: inline-block;
+  padding: 14px 49px;
+  color: #fff;
+  background-color: #fcb72b;
+  border: 3px solid transparent;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  text-decoration: none;
+  transition: background-color 0.2s linear,
+              color 0.1s linear;
+}
+.missions__link:hover {
+  border: 3px solid #fcb72b;
+  color: #fcb72b;
+  background-color: transparent;
+}
+
+
+/*  PROFESSIONS SECTION  */
+.professions__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin-bottom: 160px;
+}
+
+.professions__item {
+  background-color: #f2f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 64px 35px 40px;
+}
+.professions__item:not(.professions__item:last-child) {
+  margin-bottom: 24px;
+}
+.professions__info__heading {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 8px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+}
+.professions__info__address {
+  font-size: 15px;
+  line-height: 25px;
+  color: #495567;
+}
+.professions__item__link {
+  padding: 13.5px 65px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  border: 3px solid transparent;
+  background-color: #fcb72b;
+  transition: background-color 0.2s linear,
+              color 0.1s linear;
+}
+.professions__item__link:hover {
+  color: #fcb72b;
+  background-color: transparent;
+  border: 3px solid #fcb72b;
+}
+
+/*   LOCATION PAGE STYLES   */
+.locations__title-wrapper {
+  background-image: url("../images/site-hero-bg-circles.svg"),
+                    linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)),
+                    url("../images/site-hero-pages-bg.png");
+  background-repeat: no-repeat,
+                     repeat,
+                     no-repeat;
+  background-size: 234px 63px,
+                   100%,
+                   1799px 2249px;
+  background-position: calc(50% + 590px) calc(50%),
+                       center center,
+                       calc(50% - 145px) calc(95%);
+  padding-top: 72px;
+  padding-bottom: 72px;
+  margin-bottom: 120px;
+}
+.locations__title {
+  color: #fff;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+}
+.map {
+  background-image: url("../images/world-map.svg");
+  height: 543px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: calc(50%) calc(50%);
+  margin-bottom: 120px;
+}
+.let-us-know {
+  display: flex;
+  align-items: center;
+  margin-bottom: 120px;
+}
+.let-us-know__heading {
+  width: 350px;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  margin-right: 30px;
+  color: #495567;
+}
+.let-us-know__desc {
+  font-size: 15px;
+  line-height: 25px;
+  width: 465px;
+  color: #939CAA;
+  margin-right: 105px;
+}
+.let-us-know__button {
+  text-decoration: none;
+  background-color: #fcb72b;
+  color: #fff;
+  padding: 12.5px 42px;
+  white-space: nowrap;
+  border: 3px solid transparent;
+  font-weight: 700;
+  transition: background-color 0.2s linear,
+              color 0.1s linear;
+}
+.let-us-know__button:hover {
+  color: #fcb72b;
+  background-color: transparent;
+  border: 3px solid #fcb72b;
+}
