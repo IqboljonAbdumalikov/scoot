@@ -459,3 +459,125 @@ body {
   fill: #e5ecf4;
 }
 
+/*   ABOUT PAGE STYLES   */
+.about__title-wrapper {
+  background-image: url("../images/site-hero-bg-circles.svg"),
+                    linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)),
+                    url("../images/site-hero-pages-bg.png");
+  background-repeat: no-repeat,
+                     repeat,
+                     no-repeat;
+  background-size: 234px 63px,
+                   100%,
+                   1799px 2249px;
+  background-position: calc(50% + 590px) calc(50%),
+                       center center,
+                       calc(50% - 145px) calc(50% + 150px);
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+.about__title {
+  color: #fff;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+}
+/*  ABOUT-US SECTION  */
+.about-us {
+  padding-top: 210px;
+}
+.about-us__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin-bottom: 120px;
+}
+.about-us__item {
+  width: 445px;
+  position: relative;
+  z-index: 11;
+  display: flex;
+  align-items: center;
+}
+.about-us__item:not(.about-us__item--second) {
+  margin-right: auto;  
+  padding-bottom: 346px;
+}
+
+.about-us__item:nth-of-type(2n) {
+   flex-direction: row-reverse;
+   margin-left: auto;
+   margin-bottom: 120px;
+}
+.about-us__item:after {
+  position: absolute;
+  content: "";
+  height: 445px;
+  width: 954px;
+}
+.about-us__item--first:after {
+  background-image: url("../images/mobility-for-the-digital-era.png");
+  right: calc(50% - 1360px);
+}
+.about-us__item--second:after {
+  background-image: url("../images/better-urban-living.png");
+  right: calc(50% + 410px);
+}
+.about-us__item__info {
+  position: relative;
+  width: 445px;
+}
+.about-us__item__info:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 734px;
+  height: 138px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.about-us__item__info--first:after {
+  background-image: url("../images/yellow-arrow-to-left-top.svg");
+  top: 170px;
+  right: -840px;
+}
+.about-us__item__info--second:after {
+  background-image: url("../images/yellow-arrow-to-right.svg");
+  top: -93px;
+  right: 830px;
+}
+.about-us__heading {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+  margin-bottom: 24px;
+}
+.about-us__desc {
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  margin-bottom: 40px;
+}
+.about-us__link {
+  display: inline-block;
+  padding: 14px 19px;
+  color: #fff;
+  background-color: #fcb72b;
+  border: 3px solid transparent;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  text-decoration: none;
+  transition: background-color 0.2s linear,
+              color 0.1s linear;
+}
+.about-us__link:hover {
+  border: 3px solid #fcb72b;
+  color: #fcb72b;
+  background-color: transparent;
+}
+
