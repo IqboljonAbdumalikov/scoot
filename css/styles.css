@@ -29,7 +29,7 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
   font-family: var(--font-family-space-mono);
   margin: 0;
 }
@@ -48,10 +48,12 @@ a {
 
 /* #GLOBAL-STYLES */
 body {
+  position: relative;
   font-family: var(--font-family);
   background-color: #fff;
   color: #222;
   font-weight: 500;
+  overflow-x: hidden;
 }
 
 /* VISUALLY HIDING CODE */
@@ -136,15 +138,26 @@ body {
 
 /*SCOOTER-SHARING SECTION*/
 .scooter-sharing {
-  background-image: linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)),
+  background-image: url("../images/site-hero-bg-circles.svg"),
+                    linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)),
                     url("../images/site-hero-bg-scoot.png");
-  background-size: 100%,
+  background-size: 234px 63px,
+                   100%,
                    2610px 1740px;
-  background-repeat: repeat,
+  background-repeat: no-repeat,
+                     repeat,
                      no-repeat;
-  background-position: calc(50% + 310px) calc(50% - 430px);
+  background-position: calc(50% + 600px) calc(50%  + 125px),
+                       center center,
+                       calc(50% + 275px) calc(50% - 430px);
   padding-top: 153px;
   padding-bottom: 153px;
+}
+.scooter-sharing:before {
+  content: "";
+  background-image: url("../images/site-hero-horizontal-line.svg");
+  width: 203px;
+  height: 15px;
 }
 .scooter-sharing__info-wrapper {
   width: 500px;
@@ -251,3 +264,106 @@ body {
 	color: #939caa;
 }
 
+
+/*FEATURES */
+.features__list {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+.features__item {
+  width: 445px;
+  position: relative;
+  z-index: 11;
+  display: flex;
+  align-items: center;
+  margin-bottom: 226px;
+}
+.features__item:not(.features__item--second) {
+  margin-right: auto;
+}
+.features__item:nth-of-type(2n) {
+	 flex-direction: row-reverse;
+   margin-left: auto;
+}
+.features__item:after {
+  position: absolute;
+  content: "";
+  height: 445px;
+  width: 954px;
+}
+.features__item--first:after {
+  background-image: url("../images/easu-to-use-riding-telemetry.png");
+  right: calc(50% - 1360px);
+}
+.features__item--second:after {
+  background-image: url("../images/Coming-to-a-city-near-you.png");
+  right: calc(50% + 410px);
+}
+
+.features__item--third:after {
+  background-image: url("../images/zero-hassle-payments.png");
+  right: calc(50% - 1360px);
+}
+.features__item__info {
+  position: relative;
+  width: 445px;
+}
+.features__item__info:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 734px;
+  height: 138px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.features__item__info--first:after {
+  background-image: url("../images/yellow-arrow-to-left.svg");
+  top: 240px;
+  right: -840px;
+}
+.features__item__info--second:after {
+  background-image: url("../images/yellow-arrow-to-right.svg");
+  top: -63px;
+  right: 835px;
+}
+.features__item__info--third:after {
+  background-image: url("../images/yellow-arrow-to-left.svg");
+  top: 25px;
+  left: 880px;
+}
+.features__heading {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+  margin-bottom: 24px;
+}
+.features__desc {
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  margin-bottom: 40px;
+}
+.features__link {
+  display: inline-block;
+  padding: 14px 19px;
+  color: #fff;
+  background-color: #fcb72b;
+  border: 3px solid transparent;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  text-decoration: none;
+  transition: background-color 0.2s linear,
+              color 0.1s linear;
+}
+.features__link:hover {
+  border: 3px solid #fcb72b;
+  color: #fcb72b;
+  background-color: transparent;
+}
