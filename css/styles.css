@@ -581,3 +581,165 @@ body {
   background-color: transparent;
 }
 
+
+/*VALUES*/
+.values__heading {
+  text-align: center;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+  margin-bottom: 48px;
+}
+.values__list {
+  display: flex;
+  align-self: flex-start;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 120px;
+}
+.values__item:before {
+  display: block;
+  content: "";
+  width: 350px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 350px;
+  margin-bottom: 32px;
+}
+.values__item {
+  width: 350px;
+  text-align: center;
+}
+.values__item:not(.values__item:last-child) {
+  margin-right: 30px;
+}
+.values__item--first:before {
+  background-image: url("../images/our-tech.png");
+}
+.values__item--second:before {
+  background-image: url("../images/our-integrity.png");
+}
+.values__item--third:before {
+  background-image: url("../images/our-community.png");
+}
+.values__info__heading:before {
+  position: absolute;
+  top: -130px;
+  right: 128px;
+  display: block;
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background-color: #fcb72b;
+}
+.values__info__heading--first:before {
+  content: "01";
+  z-index: 22;
+}
+.values__info__heading--second:before {
+  content: "02";
+}
+.values__info__heading--third:before {
+  content: "03";
+}
+.values__info__heading {
+  position: relative;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 27px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+}
+.values__info__desc {
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
+
+
+/*QUESTIONS*/
+.questions {
+  margin-bottom: 160px;
+}
+.questions__heading {
+  text-align: center;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+  margin-bottom: 48px;
+}
+.how-to-use,
+.safe-driving {
+  display: flex;
+  align-items: flex-start;
+}
+.how-to-use {
+  margin-bottom: 64px;
+}
+.how-to-use__heading,
+.safe-driving__heading {
+  width: 350px;
+
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1.78571px;
+  color: #495567;
+  white-space: nowrap;
+}
+.how-to-use__list,
+.safe-driving__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin-left: 30px;
+}
+.how-to-use__item,
+.safe-driving__item {
+  width: 730px;
+  padding: 32px 40px;
+  background-color: #f2f5f9;
+  margin-bottom: 16px;
+}
+.how-to-use__info__heading,
+.safe-driving__info__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+}
+.how-to-use__info__heading:after {
+  content: "";
+  background-image: url("../images/arrow-top.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 16px;
+  height: 8px;
+}
+.safe-driving__info__heading:after {
+  content: "";
+  background-image: url("../images/arrow-top.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 16px;
+  height: 8px;
+}
+.how-to-use__info__desc,
+.safe-driving__info__desc {
+  margin-top: 24px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #495567;
+}
+
+
+
