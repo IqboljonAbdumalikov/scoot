@@ -302,7 +302,6 @@ body {
   background-image: url("../images/Coming-to-a-city-near-you.png");
   right: calc(50% + 410px);
 }
-
 .features__item--third:after {
   background-image: url("../images/zero-hassle-payments.png");
   right: calc(50% - 1360px);
@@ -367,8 +366,6 @@ body {
   color: #fcb72b;
   background-color: transparent;
 }
-
-
 /*SITE-FOOTER*/
 .site-footer {
   background-image: url("../images/site-footer-bg-circles.svg"),
@@ -740,12 +737,7 @@ body {
   line-height: 25px;
   color: #495567;
 }
-
-
-
-
 /*   CAREERS PAGE STYLES    */
-
 .careers__title-wrapper {
   background-image: url("../images/site-hero-bg-circles.svg"),
                     linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)),
